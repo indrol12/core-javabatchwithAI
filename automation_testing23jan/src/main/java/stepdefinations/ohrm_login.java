@@ -26,7 +26,7 @@ public class ohrm_login {
 		driver.findElement(By.name("username")).sendKeys("Admin");
 	    driver.findElement(By.name("password")).sendKeys("admin123");
 	}
-	@And("Click on login button")
+	@And("Click on login button of orangehrm")
 	public void login()
 	{
 		driver.findElement(By.tagName("button")).click();

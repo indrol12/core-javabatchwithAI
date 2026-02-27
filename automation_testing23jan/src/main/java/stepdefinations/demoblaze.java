@@ -48,6 +48,26 @@ public class demoblaze {
 		Alert al=driver.switchTo().alert();
 		System.out.println("Alert message:"+al.getText());
 	    al.accept();
-		driver.close();
+		//driver.close();
 	}
+@When("user click on login button on navbar")
+public void navbar_login()
+{
+	System.out.println("clicked on login button on navbar");
+}
+@And("enter registred username and password")
+public void reg_usernameandpass()
+{
+	System.out.println("abc and abc123");
+}
+@And("Click on login button")
+public void login_button()
+{
+	System.out.println("login button");
+}
+@Then("demoblaze login successfull and should display alert message")
+public void login_alert()
+{
+	System.out.println("login alert");
+}
 }
