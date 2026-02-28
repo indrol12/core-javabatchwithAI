@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="cucumber_features/demoblaze.feature",glue="stepdefinations")
+@CucumberOptions(features="cucumber_features/fb.feature",glue="stepdefinations")
 public class runner {
 
 }
