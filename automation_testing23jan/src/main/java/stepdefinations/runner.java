@@ -6,7 +6,13 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="cucumber_features/fb.feature",glue="stepdefinations")
+@CucumberOptions(features="cucumber_features",
+glue="stepdefinations",
+tags="not @smoke",
+monochrome=true,
+plugin= {"pretty","html:target\\cucumberreprt.html",
+       "pretty","json:target\\cucumberreprt.json"}
+)
 public class runner {
 
 }
